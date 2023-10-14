@@ -11,7 +11,8 @@ Also, we can add a simple cache to the ring buffer (to store some constants or s
 Also, we can simply remove FIFO's (to save more power) and leave only folloving blocks (compared to BISMO pipeline): 
 ![image](https://github.com/ValeriyAndreevichPushkarev/STA_ring_buffer/assets/130975795/92512da3-6264-4eb5-b517-b6efd07245f3)
 
-
-
 Also, we can make several such blocks
 (Note that we can spend more energy to store the results than to perform multiplications/additions)
+
+Also, there are many solutions where execution graphs (and probably some sorts of caching) can be resolved during model "compilation" (cerebras WSE).
+Checking for data presence in cache can consume a lot too (and there are no "ring buffers" in common types of accelerators).
