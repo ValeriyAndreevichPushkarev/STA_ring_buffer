@@ -9,7 +9,8 @@ If we make our NPU/TPU with a ring buffer and store rows/columns of a second mat
 Also, we can add a simple cache to the ring buffer (to store some constants or so). And Have a circular buffer and a cache inside of every computing/grid cell.
 
 Also, we can simply remove FIFO's (to save more power) and leave only folloving blocks (compared to BISMO pipeline): 
-![image](https://github.com/ValeriyAndreevichPushkarev/STA_ring_buffer/assets/130975795/92512da3-6264-4eb5-b517-b6efd07245f3)
+![image](https://github.com/ValeriyAndreevichPushkarev/STA_ring_buffer/assets/130975795/d16ea9e3-6ddb-4dfc-ad8e-8171d911befb)
+
 
 Also, we can make several such blocks
 (Note that we can spend more energy to store the results than to perform multiplications/additions)
